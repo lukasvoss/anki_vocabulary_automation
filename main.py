@@ -12,7 +12,7 @@ if __name__ == '__main__':
     df['Pinyin'] = df['Hanzi'].apply(to_pinyin)
     # Creates a new Excel file which now will be work in
 
-    excel_output_name = 'vocabulary' + '.xlsx'
+    excel_output_name = 'vocabulary.xlsx'
     df.to_excel(excel_output_name, index=False)
 
     # Import the Excel file

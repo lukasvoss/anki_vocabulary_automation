@@ -3,6 +3,7 @@ from gtts import gTTS
 import jieba, itertools, openpyxl
 from translate import Translator
 from hanziconv import HanziConv
+import os
 
 
 # Add Pinyin
@@ -29,6 +30,12 @@ def do_TTS(hanzi):
     tts = gTTS(text=hanzi, lang='zh-TW')
     # Filename
     filename = hanzi[0:10] + '.mp3'
+    # checking if the directory audio exist or not
+    if not os.path.exists("/audio"):
+        # if the demo_folder directory is not present
+        # then create it.
+        os.makedirs("audio")
+
     # Save the audio files in the local AND the Anki media.collection folder
     audio_path = 'audio/' + filename
     tts.save(audio_path)
