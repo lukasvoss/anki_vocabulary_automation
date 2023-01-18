@@ -65,7 +65,6 @@ def add_audio_link(audio_link, excel_file, cell, hanzi):
 
     filename = hanzi[0:10] + '.mp3'
     worksheet[cell].value = "[sound:" + filename + "]"
-
     # Save the changes to the Excel file
     wb.save(excel_file)
 
