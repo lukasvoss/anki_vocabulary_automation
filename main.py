@@ -21,8 +21,7 @@ if __name__ == '__main__':
     # Translate to English
     sheet["English"] = np.NAN
     translation_list = list(sheet["English"])
-    translation_list = [translation(hanzi, "zh", "english") for hanzi in sheet["Hanzi"]]
-    sheet["English"] = translation_list
+    sheet["English"] = [translation(hanzi, "zh", "english") for hanzi in sheet["Hanzi"]]
 
     sheet.to_excel(excel_output_name, index=False)
 

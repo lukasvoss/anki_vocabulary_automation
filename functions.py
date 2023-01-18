@@ -31,7 +31,7 @@ def do_TTS(hanzi):
     # Filename
     filename = hanzi[0:10] + '.mp3'
     # checking if the directory audio exist or not
-    if not os.path.exists("/audio"):
+    if not os.path.exists("audio"):
         # if the demo_folder directory is not present
         # then create it.
         os.makedirs("audio")
