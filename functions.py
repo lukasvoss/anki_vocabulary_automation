@@ -44,7 +44,7 @@ def do_TTS(hanzi):
     tts.save(anki_media_collection_path)
 
 
-def translation(hanzi="", from_language="zh", to_language="zh"):
+def translation(hanzi="", from_language="zh", to_language="en"):
     # Adds the translation to the Excel data frame
     translator = Translator(from_lang=from_language, to_lang=to_language)
     simplified_hanzi = HanziConv.toSimplified(hanzi)
