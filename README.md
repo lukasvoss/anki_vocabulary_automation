@@ -1,7 +1,7 @@
 # Anki Chinese Vocabulary Flashcard Creation Automation Tool
 
 ## A tool written in Python3 enabling Chinese learners to speed up their Anki flashcard creation
-## This tool comes with two different options of operation: 1 and 2
+## This tool comes with two different options of operation
 
 ### Introduction
 
