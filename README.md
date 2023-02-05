@@ -47,7 +47,7 @@ Reads the input Excel-file "hanzi_list.xlsx" and a pickle database "chinese_data
 * Import the csv file to an existing Anki deck of yours. Ensure that the order of the fields on your flashcard correspond to the order of the csv file that shall be imported. A guide on the csv import process to do so can be found [here](https://www.youtube.com/watch?v=BwGNP3GXmxg) starting from 4:33.
 
 **Option 2**
-* Run the file "create_xslx.py"
+* Run the file "create_xlsx.py"
 * Import the csv file to an existing Anki deck of yours. Ensure that the order of the fields on your flashcard correspond to the order of the csv file that shall be imported. A guide on the csv import process to do so can be found [here](https://www.youtube.com/watch?v=BwGNP3GXmxg) starting from 4:33.
 * The audio generation will happen directly in Anki using the [Forvo-addin](https://ankiweb.net/shared/info/858591644). This can then be semi-automized with the file "forvo_adder.py" that imitates the user's mouse and keyboard inputs.
 * Adjust the file "forvo_adder.py" in the relevant lines that govern where to click. At best, use a full screen mode of anki to avoid issues with open windows of other running applications on your machine.
