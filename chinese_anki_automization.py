@@ -13,7 +13,16 @@ with open('chinese_database.pickle', 'rb') as handle:
     # deserialize the dictionary
     db = pickle.load(handle)
 
-def create_anki_csv(input_file, output_file):
+def create_anki_csv(input_file: str, output_file: str):
+    """
+    Function that adds the phonetics of Chinese characters (hanzi) in form of Pinyin, its English translation
+    and an example sentence to the dataframe
+    :param input_file (string): Name of the input file
+    :param output_file (string): Name of the output file 
+    :return: The final csv that will be used to import the vocabulary into Anki 
+    """
+
+
     # Read in the input Excel-sheet. It expects a file with one column named 'Hanzi' that has
     # Chinese characters, so called 'Hanzi'. These is the vocabulary you want to learn
     df = pd.read_excel(input_file)
@@ -28,7 +37,7 @@ def create_anki_csv(input_file, output_file):
     df.to_csv(output_file, index=False, encoding='utf-8-sig')
 
 
-def convert_to_pinyin(hanzi):
+def convert_to_pinyin(hanzi: str):
     """
     Function that generates the phonetics of Chinese characters (hanzi) in form of Pinyin
     :param hanzi: Chinese characters that we want the get the phonetics for
@@ -45,7 +54,7 @@ def convert_to_pinyin(hanzi):
         return ''.join(combined)
         
 
-def get_translation(hanzi):
+def get_translation(hanzi: str):
     """
     Function that translates the Chinese characters (hanzi) to its English meaning
     :param hanzi: Chinese characters that we want the get the translation for
@@ -67,7 +76,7 @@ def get_translation(hanzi):
             return
         
 
-def get_example(hanzi):
+def get_example(hanzi: str):
     """
     Function that retrieves the example sentence from the db, if the hanzi is available in the db
     :param hanzi: Chinese characters that we want the get the example for
