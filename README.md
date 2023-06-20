@@ -30,7 +30,7 @@ According to each Chinese character (Hanzi) its pinyin and the English translati
 ### Adding audio
 
 * This is a script that semi-automizes adding mp3 audio files to your Anki flashcards directly in the app Anki
-* First, download the [Forvo Add-On] (https://ankiweb.net/shared/info/858591644). This Extensions allows for adding mp3 Audio files based on a field of your Anki flashcard. It does so by leveraging recordings of the Forvo commnunity
+* First, download the [Forvo Add-On](https://ankiweb.net/shared/info/858591644). This Extensions allows for adding mp3 Audio files based on a field of your Anki flashcard. It does so by leveraging recordings of the Forvo commnunity
 * Change the coordinates of the buttons according to your screen and you can start the script
 * The script will then do the necessary click procedure to add the recording for each card
 
