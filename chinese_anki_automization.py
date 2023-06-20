@@ -82,6 +82,6 @@ def get_example(hanzi):
 if __name__ == "__main__":
     # Execute the script
     input_file = 'hanzi_list.xlsx'
-    output_file = 'anki_vokabeln.csv'
+    output_file = 'chinese_vocabulary.csv'
 
     create_anki_csv(input_file, output_file)
