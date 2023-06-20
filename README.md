@@ -38,4 +38,4 @@ According to each Chinese character (Hanzi) its pinyin and the English translati
 If you found an issue or would like to submit and idea for improving this tool, please feel free to do so and submit an issue using the issue tab above. If you would like to submit a PR with a fix, please reference the issue that you created.
 
 ### Known issues
-For **option 1**, the translation from Chinese to English is sometimes poor. That's why I added the **Option 2**. Feel free to reach out in case you know how to improve the translation quality consistently!
+If the hanzi is not available in the database, the translation from Chinese to English is sometimes poor. Feel free to reach out in case you know how to consistently improve the translation quality!
